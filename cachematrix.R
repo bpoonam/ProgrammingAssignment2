@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## 1.set the value of the matrix
+## 2.get the valure of the matrix
+## 3.set the value of inverse of the matrix
+## 4.get the value of inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -19,7 +19,10 @@ list(set=set,get=get,setinv=setinv,getinv=getinv)
 }
 
 
-## Write a short comment describing this function
+## This function returns the inverse of the matrix
+## it first checks if the inverse has already been cached
+##if so, it gets the result and prints the cached data with comment of "getting cached data"
+## otherwise, it will compute the inverse, sets the value in the cache via set inverse function and retunrns the result.
 
 
 cacheSolve <- function(x) {
